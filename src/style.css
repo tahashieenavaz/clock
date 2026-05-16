@@ -1,3 +1,19 @@
 body {
   background: #131313;
+  color: #fafafa;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.bold {
+  font-weight: bold;
+}
+.minutes { 
+  color: #88E788
+}
+.watch {
+  font-size: 10vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
 }
