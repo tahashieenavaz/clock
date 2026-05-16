@@ -11,9 +11,12 @@ body {
 .minutes { 
   color: #88E788
 }
+.seconds { 
+  color: #88E78875
+}
 .watch {
   font-size: 10vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2vw;
 }
