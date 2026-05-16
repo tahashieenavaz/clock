@@ -10,7 +10,10 @@ export default function watch_loop() {
     if (minutesElement) minutesElement.textContent = String(now.getMinutes());
     if (secondsElement) secondsElement.textContent = String(now.getSeconds());
     if (millisecondsElement)
-      millisecondsElement.textContent = String(now.getMilliseconds());
+      millisecondsElement.textContent = String(now.getMilliseconds()).padStart(
+        3,
+        "0",
+      );
     requestAnimationFrame(_watch_loop);
   });
 }
