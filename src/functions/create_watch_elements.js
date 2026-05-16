@@ -1,8 +1,9 @@
-import append_to_app from "./append_to_app"
+import append_to_app from "./append_to_app";
+import create_element from "./create_element";
 
 export default function create_watch_elements() {
-    const hours = document.createElement("div")
-    const minutes = document.createElement("div")
-    const seconds = document.createElement("div")
-    append_to_app(hours, minutes, seconds)
+  const hours = create_element("div", "hours");
+  const minutes = create_element("div", "minutes");
+  const seconds = create_element("div", "seconds");
+  append_to_app(hours, minutes, seconds);
 }
